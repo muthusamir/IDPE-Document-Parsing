@@ -1,0 +1,9 @@
+model:
+  checkpoint: "monkeyocr-v1.5"
+rrf:
+  max_iters: 3
+active_sampling:
+  lora_rank: 16
+logical_graph:
+  gnn_layers: 2
+  edge_types: ["derives_from", "references", "contains", "belongs_to"]
